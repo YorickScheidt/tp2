@@ -8,7 +8,7 @@ on:
 
 jobs:
   job-name: build-and-test-app
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       #checkout your github code using actions/checkout@v2.3.3
       - uses: actions/checkout@v2.3.3

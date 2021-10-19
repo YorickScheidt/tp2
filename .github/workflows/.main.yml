@@ -12,6 +12,6 @@ jobs:
       - uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'adopt'
+         # distribution: 'adopt'
       - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots --file simple-api/pow.xml verify
+        run: mvn -B package --file simple-api/pom.xml

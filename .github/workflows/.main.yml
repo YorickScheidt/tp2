@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     job-name: build-and-test-app
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
       steps:
         #checkout your github code using actions/checkout@v2.3.3
         - uses: actions/checkout@v2.3.3

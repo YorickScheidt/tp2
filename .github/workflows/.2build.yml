@@ -26,5 +26,5 @@ jobs:
           tags: ${{secrets.DOCKER_HUB_USERNAME}}/tp2:httpd
           push: ${{ github.ref == 'refs/heads/main }}
       - name: Login to DockerHub
-        run: docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{secrets.DOCKER_HUB_TOKEN }}
+        run: docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{secrets.DOCKER_HUB_ACCESS_TOKEN }}
 

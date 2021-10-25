@@ -1,4 +1,6 @@
-on: [push]
+on: 
+  repository_dispatch:
+    types: [build-and-test-app]
 jobs: 
   docker:
     build-and-push-docker-image:

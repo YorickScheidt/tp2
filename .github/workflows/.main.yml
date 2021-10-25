@@ -22,7 +22,7 @@ jobs:
           
       - name: Build and test with Maven
         run: mvn --batch-mode --update-snapshots --file simple-api/pom.xml verify
-
+#
 
   build-and-push-docker-image:
     needs: build-and-test

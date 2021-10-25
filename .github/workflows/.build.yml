@@ -2,7 +2,7 @@ on: [push]
 jobs: 
   docker:
     build-and-push-docker-image:
-      needs: build-and-test-backend
+      needs: main
       runs-on: ubuntu-latest
       steps:
       - name: Checkout code

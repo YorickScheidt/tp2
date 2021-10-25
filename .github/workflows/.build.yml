@@ -1,6 +1,6 @@
 on: [push]
 jobs: 
-  build-and-push-docker-image:
+  docker:
     needs: build-and-test-backend
   # run only when code is compiling and tests are passing
     runs-on: ubuntu-latest

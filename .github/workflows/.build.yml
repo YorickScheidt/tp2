@@ -1,6 +1,6 @@
 on: 
   repository_dispatch:
-    types: [build]
+    types: [build-and-test-backend]
 jobs: 
   docker:
     build-and-push-docker-image:

@@ -3,7 +3,7 @@ name: CI devops 2021 EPF
 on: [push]
 
 jobs:
-  build:
+  build-and-test-backend:
     runs-on: ubuntu-latest
 
     steps:
